@@ -1,0 +1,337 @@
+{
+  "schemaVersion": "1.0",
+  "id": "bjs-spotlight",
+  "name": "BJ's Team Member Spotlight",
+  "version": "1.1.0",
+  "description": "Widescreen 16:9 BJ's Team Member Spotlight two-slide recognition template (6 Nominees 3x2 grid + Team Member of the Month).",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "fonts": [
+    {
+      "family": "StudioSans",
+      "weight": 400,
+      "style": "normal",
+      "src": "fonts/inter-latin-400-normal.woff2"
+    },
+    {
+      "family": "StudioSans",
+      "weight": 400,
+      "style": "italic",
+      "src": "fonts/inter-latin-400-italic.woff2"
+    },
+    {
+      "family": "StudioSans",
+      "weight": 600,
+      "style": "normal",
+      "src": "fonts/inter-latin-600-normal.woff2"
+    },
+    {
+      "family": "StudioSans",
+      "weight": 700,
+      "style": "normal",
+      "src": "fonts/inter-latin-700-normal.woff2"
+    }
+  ],
+  "slides": {
+    "nominees": {
+      "title": "BJ's Team Member Nominees",
+      "background": {
+        "asset": "nominees-background-modified.jpg",
+        "fit": "cover",
+        "backdropColor": "#080808"
+      },
+      "imageRegions": [
+        {
+          "id": "nominee-photo-0",
+          "binding": "nominee.0.photo",
+          "rect": { "x": 0.224908, "y": 0.388672, "width": 0.167033, "height": 0.193359 },
+          "fit": "cover",
+          "focalPoint": { "x": 0.5, "y": 0.35 },
+          "placeholder": {
+            "mode": "neutral-silhouette",
+            "backgroundColor": "#D0D0D0",
+            "foregroundColor": "#636363"
+          }
+        },
+        {
+          "id": "nominee-photo-1",
+          "binding": "nominee.1.photo",
+          "rect": { "x": 0.414286, "y": 0.388672, "width": 0.167033, "height": 0.193359 },
+          "fit": "cover",
+          "focalPoint": { "x": 0.5, "y": 0.35 },
+          "placeholder": {
+            "mode": "neutral-silhouette",
+            "backgroundColor": "#D0D0D0",
+            "foregroundColor": "#636363"
+          }
+        },
+        {
+          "id": "nominee-photo-2",
+          "binding": "nominee.2.photo",
+          "rect": { "x": 0.60293, "y": 0.388672, "width": 0.167033, "height": 0.193359 },
+          "fit": "cover",
+          "focalPoint": { "x": 0.5, "y": 0.35 },
+          "placeholder": {
+            "mode": "neutral-silhouette",
+            "backgroundColor": "#D0D0D0",
+            "foregroundColor": "#636363"
+          }
+        },
+        {
+          "id": "nominee-photo-3",
+          "binding": "nominee.3.photo",
+          "rect": { "x": 0.224908, "y": 0.645833, "width": 0.167033, "height": 0.193359 },
+          "fit": "cover",
+          "focalPoint": { "x": 0.5, "y": 0.35 },
+          "placeholder": {
+            "mode": "neutral-silhouette",
+            "backgroundColor": "#D0D0D0",
+            "foregroundColor": "#636363"
+          }
+        },
+        {
+          "id": "nominee-photo-4",
+          "binding": "nominee.4.photo",
+          "rect": { "x": 0.414286, "y": 0.645833, "width": 0.167033, "height": 0.193359 },
+          "fit": "cover",
+          "focalPoint": { "x": 0.5, "y": 0.35 },
+          "placeholder": {
+            "mode": "neutral-silhouette",
+            "backgroundColor": "#D0D0D0",
+            "foregroundColor": "#636363"
+          }
+        },
+        {
+          "id": "nominee-photo-5",
+          "binding": "nominee.5.photo",
+          "rect": { "x": 0.60293, "y": 0.645833, "width": 0.167033, "height": 0.193359 },
+          "fit": "cover",
+          "focalPoint": { "x": 0.5, "y": 0.35 },
+          "placeholder": {
+            "mode": "neutral-silhouette",
+            "backgroundColor": "#D0D0D0",
+            "foregroundColor": "#636363"
+          }
+        }
+      ],
+      "textRegions": [
+        {
+          "id": "nominee-name-0",
+          "binding": "nominee.0.name",
+          "rect": { "x": 0.227839, "y": 0.588542, "width": 0.161172, "height": 0.035156, "borderRadius": 0.003 },
+          "maskFill": "#BC0202",
+          "padding": { "x": 0.008, "y": 0.003 },
+          "font": {
+            "family": "StudioSans",
+            "weight": 700,
+            "style": "normal",
+            "maxSizePx": 24,
+            "minSizePx": 13,
+            "lineHeight": 1.15,
+            "color": "#FFFFFF",
+            "textTransform": "uppercase"
+          },
+          "align": "center",
+          "verticalAlign": "middle",
+          "maxLines": 1,
+          "overflow": "shrink-then-ellipsis"
+        },
+        {
+          "id": "nominee-name-1",
+          "binding": "nominee.1.name",
+          "rect": { "x": 0.417582, "y": 0.588542, "width": 0.161172, "height": 0.035156, "borderRadius": 0.003 },
+          "maskFill": "#BC0202",
+          "padding": { "x": 0.008, "y": 0.003 },
+          "font": {
+            "family": "StudioSans",
+            "weight": 700,
+            "style": "normal",
+            "maxSizePx": 24,
+            "minSizePx": 13,
+            "lineHeight": 1.15,
+            "color": "#FFFFFF",
+            "textTransform": "uppercase"
+          },
+          "align": "center",
+          "verticalAlign": "middle",
+          "maxLines": 1,
+          "overflow": "shrink-then-ellipsis"
+        },
+        {
+          "id": "nominee-name-2",
+          "binding": "nominee.2.name",
+          "rect": { "x": 0.605861, "y": 0.588542, "width": 0.161172, "height": 0.035156, "borderRadius": 0.003 },
+          "maskFill": "#BC0202",
+          "padding": { "x": 0.008, "y": 0.003 },
+          "font": {
+            "family": "StudioSans",
+            "weight": 700,
+            "style": "normal",
+            "maxSizePx": 24,
+            "minSizePx": 13,
+            "lineHeight": 1.15,
+            "color": "#FFFFFF",
+            "textTransform": "uppercase"
+          },
+          "align": "center",
+          "verticalAlign": "middle",
+          "maxLines": 1,
+          "overflow": "shrink-then-ellipsis"
+        },
+        {
+          "id": "nominee-name-3",
+          "binding": "nominee.3.name",
+          "rect": { "x": 0.227839, "y": 0.843099, "width": 0.161172, "height": 0.035156, "borderRadius": 0.003 },
+          "maskFill": "#BC0202",
+          "padding": { "x": 0.008, "y": 0.003 },
+          "font": {
+            "family": "StudioSans",
+            "weight": 700,
+            "style": "normal",
+            "maxSizePx": 24,
+            "minSizePx": 13,
+            "lineHeight": 1.15,
+            "color": "#FFFFFF",
+            "textTransform": "uppercase"
+          },
+          "align": "center",
+          "verticalAlign": "middle",
+          "maxLines": 1,
+          "overflow": "shrink-then-ellipsis"
+        },
+        {
+          "id": "nominee-name-4",
+          "binding": "nominee.4.name",
+          "rect": { "x": 0.417582, "y": 0.843099, "width": 0.161172, "height": 0.035156, "borderRadius": 0.003 },
+          "maskFill": "#BC0202",
+          "padding": { "x": 0.008, "y": 0.003 },
+          "font": {
+            "family": "StudioSans",
+            "weight": 700,
+            "style": "normal",
+            "maxSizePx": 24,
+            "minSizePx": 13,
+            "lineHeight": 1.15,
+            "color": "#FFFFFF",
+            "textTransform": "uppercase"
+          },
+          "align": "center",
+          "verticalAlign": "middle",
+          "maxLines": 1,
+          "overflow": "shrink-then-ellipsis"
+        },
+        {
+          "id": "nominee-name-5",
+          "binding": "nominee.5.name",
+          "rect": { "x": 0.605861, "y": 0.843099, "width": 0.161172, "height": 0.035156, "borderRadius": 0.003 },
+          "maskFill": "#BC0202",
+          "padding": { "x": 0.008, "y": 0.003 },
+          "font": {
+            "family": "StudioSans",
+            "weight": 700,
+            "style": "normal",
+            "maxSizePx": 24,
+            "minSizePx": 13,
+            "lineHeight": 1.15,
+            "color": "#FFFFFF",
+            "textTransform": "uppercase"
+          },
+          "align": "center",
+          "verticalAlign": "middle",
+          "maxLines": 1,
+          "overflow": "shrink-then-ellipsis"
+        }
+      ]
+    },
+    "winner": {
+      "title": "BJ's Team Member of the Month",
+      "background": {
+        "asset": "winner-background-modified.jpg",
+        "fit": "cover",
+        "backdropColor": "#080808"
+      },
+      "imageRegions": [
+        {
+          "id": "winner-photo",
+          "binding": "winner.photo",
+          "rect": { "x": 0.401832, "y": 0.38737, "width": 0.208425, "height": 0.247396 },
+          "fit": "cover",
+          "focalPoint": { "x": 0.5, "y": 0.35 },
+          "placeholder": {
+            "mode": "neutral-silhouette",
+            "backgroundColor": "#D0D0D0",
+            "foregroundColor": "#636363"
+          }
+        }
+      ],
+      "textRegions": [
+        {
+          "id": "winner-name",
+          "binding": "winner.name",
+          "rect": { "x": 0.249084, "y": 0.653646, "width": 0.509158, "height": 0.0625 },
+          "maskFill": "#E5E3E2",
+          "padding": { "x": 0.012, "y": 0.004 },
+          "font": {
+            "family": "StudioSans",
+            "weight": 700,
+            "style": "normal",
+            "maxSizePx": 46,
+            "minSizePx": 22,
+            "lineHeight": 1.1,
+            "color": "#111111",
+            "textTransform": "uppercase"
+          },
+          "align": "center",
+          "verticalAlign": "middle",
+          "maxLines": 1,
+          "overflow": "shrink-then-ellipsis"
+        },
+        {
+          "id": "winner-category",
+          "binding": "winner.category",
+          "rect": { "x": 0.249084, "y": 0.716146, "width": 0.509158, "height": 0.0625 },
+          "prefix": "Recognized for: ",
+          "maskFill": "#E5E3E2",
+          "padding": { "x": 0.012, "y": 0.004 },
+          "font": {
+            "family": "StudioSans",
+            "weight": 700,
+            "style": "normal",
+            "maxSizePx": 32,
+            "minSizePx": 16,
+            "lineHeight": 1.15,
+            "color": "#C20A0A",
+            "textTransform": "none"
+          },
+          "align": "center",
+          "verticalAlign": "middle",
+          "maxLines": 1,
+          "overflow": "shrink-then-ellipsis"
+        },
+        {
+          "id": "winner-summary",
+          "binding": "winner.summary",
+          "rect": { "x": 0.229304, "y": 0.791016, "width": 0.547985, "height": 0.088542, "borderRadius": 0.003 },
+          "maskFill": "#F3F4F3",
+          "padding": { "x": 0.018, "y": 0.01 },
+          "font": {
+            "family": "StudioSans",
+            "weight": 400,
+            "style": "italic",
+            "maxSizePx": 24,
+            "minSizePx": 14,
+            "lineHeight": 1.28,
+            "color": "#1E1E1E",
+            "textTransform": "none"
+          },
+          "align": "center",
+          "verticalAlign": "middle",
+          "maxLines": 3,
+          "overflow": "shrink-then-ellipsis"
+        }
+      ]
+    }
+  }
+}

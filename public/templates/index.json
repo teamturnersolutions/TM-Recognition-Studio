@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0",
+  "templates": [
+    {
+      "id": "bjs-spotlight",
+      "manifestPath": "/templates/bjs-spotlight/manifest.json"
+    }
+  ]
+}

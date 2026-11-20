@@ -1,0 +1,22 @@
+# Dependencies and build outputs
+node_modules/
+dist/
+.vite/
+
+# Local environment and logs
+.env
+.env.*
+*.log
+npm-debug.log*
+
+# Local test/reference media excluded from repository
+MockData/
+RunnersUP-TOP6.jpg
+WeeklyWinner.jpg
+
+# OS and editor metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
