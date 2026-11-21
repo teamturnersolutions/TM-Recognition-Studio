@@ -17,12 +17,14 @@ export function Header({
     <header className="sticky top-0 z-30 border-b border-slate-800 bg-slate-950/95 text-white shadow-md backdrop-blur-xs">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-3.5 sm:px-6">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#b90404] text-sm font-extrabold tracking-tight text-white shadow-inner ring-1 ring-white/25">
-            TM
-          </div>
+          <img
+            src="/icons/icon-64.png"
+            alt="BJ's TM Spotlight Studio"
+            className="h-10 w-10 shrink-0 object-contain drop-shadow-sm"
+          />
           <div>
             <h1 className="text-base font-bold tracking-tight text-white sm:text-lg">
-              TM Recognition Studio
+              TM Spotlight Studio
             </h1>
             <p className="text-xs text-slate-400">
               Local-First Slide Compositor &middot; Session Memory Only
@@ -36,7 +38,7 @@ export function Header({
             onClick={() => onSelectView('builder')}
             className={`rounded-md px-3.5 py-2 text-sm font-medium transition ${
               view === 'builder'
-                ? 'bg-slate-800 text-white ring-1 ring-slate-700'
+                ? 'bg-slate-800 text-white ring-1 ring-slate-600'
                 : 'text-slate-300 hover:bg-slate-900 hover:text-white'
             }`}
           >
@@ -47,7 +49,7 @@ export function Header({
             onClick={() => onSelectView('preview')}
             className={`rounded-md px-3.5 py-2 text-sm font-medium transition ${
               view === 'preview'
-                ? 'bg-slate-800 text-white ring-1 ring-slate-700'
+                ? 'bg-slate-800 text-white ring-1 ring-slate-600'
                 : canPreview
                   ? 'text-slate-300 hover:bg-slate-900 hover:text-white'
                   : 'text-slate-400 hover:bg-slate-900 hover:text-slate-200'

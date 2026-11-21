@@ -1,16 +1,17 @@
-# TM Recognition Studio (v0.1.0)
+# TM Spotlight Studio (v0.2.0)
 
-A self-contained, local-first Progressive Web Application (PWA) that composes manually entered Team Member recognition data into two deterministic `1920 × 1080` (16:9) presentation slides:
+A self-contained, local-first Progressive Web Application (PWA) that composes manually entered or JSON-imported Team Member recognition data into two deterministic `1920 × 1080` (16:9) presentation slides:
 
 1. **BJ's Team Member Nominees** — six nominees arranged in a fixed 3 × 2 grid.
-2. **BJ's Team Member of the Month** — one selected nominee automatically inheriting their name and photo, presented with Store / Department, Recognition Category, and Recognition Summary.
+2. **BJ's Team Member of the Month** — one selected nominee automatically inheriting their name and photo, presented with Recognized For and Recognition Summary.
 
 ---
 
 ## Key Properties
 
-- **100% Client-Side & Local-First:** No backend, no database, no authentication, no external APIs, and no cloud dependencies.
-- **Zero Recognition Persistence:** All entered names, winner details, and uploaded photos exist strictly in session memory. Refreshing, closing the tab, or confirming **Reset / New Recognition** clears all data and revokes temporary browser `ObjectURL`s.
+- **100% Client-Side & Local-First:** No backend, no database, no authentication, and no cloud dependencies.
+- **Zero Recognition Persistence:** All entered names, winner details, imported JSON data, and photos exist strictly in session memory. Refreshing, closing the tab, or confirming **Reset / New Recognition** clears all data and revokes temporary browser `ObjectURL`s.
+- **Flexible Photo Input & JSON Import:** Upload local photos (JPG/PNG/WebP) or load images directly by URL with live preview in the form, and upload a `.json` file to auto-populate the builder form for review before composing slides.
 - **Offline PWA:** Service worker caches only the application shell and read-only template packages so the app continues working offline after initial installation.
 - **Decoupled Template Engine:** All slide coordinates, typography, and asset paths live in versioned `manifest.json` packages under `public/templates/`. See [docs/template-manifest-spec.md](docs/template-manifest-spec.md).
 - **Deterministic Export:** Exports independent `1920 × 1080` PNGs for Slide 1 and Slide 2 plus a combined 2-page 16:9 PDF, independent of browser window size.

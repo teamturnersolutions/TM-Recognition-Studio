@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="TM Recognition Studio">
-  <rect width="128" height="128" rx="20" fill="#0f172a" />
-  <rect x="16" y="16" width="96" height="96" rx="12" fill="#b90404" stroke="#ffffff" stroke-width="4" />
-  <text x="64" y="77" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="800">TM</text>
-</svg>

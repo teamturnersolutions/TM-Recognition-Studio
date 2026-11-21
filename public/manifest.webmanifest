@@ -1,7 +1,7 @@
 {
-  "name": "TM Recognition Studio",
-  "short_name": "TM Studio",
-  "description": "Local-first recognition slide compositor for Team Member Spotlight presentations.",
+  "name": "TM Spotlight Studio",
+  "short_name": "TM Spotlight",
+  "description": "Local-first recognition slide compositor for BJ's Team Member Spotlight presentations.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -21,9 +21,9 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/icons/icon-bjs.png",
+      "sizes": "2549x1998",
+      "type": "image/png",
       "purpose": "any"
     }
   ]

@@ -22,8 +22,10 @@ export type DecodedImageSource = ImageBitmap | HTMLImageElement;
 
 export interface UploadedPhoto {
   fileName: string;
-  mimeType: AcceptedImageMimeType;
+  mimeType: AcceptedImageMimeType | 'image/url';
   objectUrl: string;
+  sourceUrl?: string;
+  corsRestricted?: boolean;
   source: DecodedImageSource;
   naturalWidth: number;
   naturalHeight: number;

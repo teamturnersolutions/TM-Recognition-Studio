@@ -26,9 +26,9 @@ export async function buildCombinedPdfBytes(
   ]);
 
   const pdfDoc = await PDFDocument.create();
-  pdfDoc.setTitle('BJ’s Team Member Recognition Slides');
-  pdfDoc.setCreator('TM Recognition Studio v0.1.0');
-  pdfDoc.setProducer('TM Recognition Studio');
+  pdfDoc.setTitle('BJ’s Team Member Spotlight Slides');
+  pdfDoc.setCreator('TM Spotlight Studio v0.2.0');
+  pdfDoc.setProducer('TM Spotlight Studio');
 
   const nomineesImage = await pdfDoc.embedPng(new Uint8Array(nomineesBytes));
   const nomineesPage = pdfDoc.addPage([PDF_PAGE_WIDTH_PT, PDF_PAGE_HEIGHT_PT]);

@@ -2,15 +2,16 @@
  * Strictly caches ONLY static application shell assets and read-only template packages.
  * Never caches blob:, data:, POST requests, or any user recognition data.
  */
-const CACHE_NAME = 'tm-recognition-studio-v0.1.3';
+const CACHE_NAME = 'tm-spotlight-studio-v0.2.0';
 
 const APP_SHELL_URLS = [
   '/',
   '/index.html',
   '/manifest.webmanifest',
-  '/icons/icon.svg',
+  '/icons/icon-64.png',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
+  '/icons/icon-bjs.png',
   '/templates/index.json',
   '/templates/bjs-spotlight/manifest.json',
   '/templates/bjs-spotlight/nominees-background-modified.jpg',

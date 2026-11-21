@@ -25,13 +25,25 @@ export function buildExportFilename(
 
 export function canvasToPngBlob(canvas: HTMLCanvasElement): Promise<Blob> {
   return new Promise((resolve, reject) => {
-    canvas.toBlob((blob) => {
-      if (!blob) {
-        reject(new Error('Failed to encode slide as PNG.'));
+    try {
+      canvas.toBlob((blob) => {
+        if (!blob) {
+          reject(new Error('Failed to encode slide as PNG.'));
+          return;
+        }
+        resolve(blob);
+      }, 'image/png');
+    } catch (error) {
+      if (error instanceof DOMException && error.name === 'SecurityError') {
+        reject(
+          new Error(
+            'Export blocked because a remote photo URL does not allow cross-origin canvas access. Download that image and upload it locally to export.',
+          ),
+        );
         return;
       }
-      resolve(blob);
-    }, 'image/png');
+      reject(error instanceof Error ? error : new Error('Failed to encode slide as PNG.'));
+    }
   });
 }
 
